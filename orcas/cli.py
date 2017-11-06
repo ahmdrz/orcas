@@ -60,7 +60,6 @@ def process_files(files):
             face = face_tool.Face(face_encoding, path=f)
             if index >= 0:
                 face.id = faces[index].id
-                face.cache = faces[index].cache
             labels.append(str(face.id))
             faces.append(face)
         logger.info(". Done", prefix=False)

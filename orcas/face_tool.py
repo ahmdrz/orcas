@@ -1,10 +1,13 @@
 import dlib
 import uuid
 import numpy as np
+import os
+
+_base_dir = os.path.dirname(__file__)
 
 _detector = dlib.get_frontal_face_detector()
-_predictor = dlib.shape_predictor("./data/shape_predictor_5_face_landmarks.dat")
-_encoder = dlib.face_recognition_model_v1("./data/dlib_face_recognition_resnet_model_v1.dat")
+_predictor = dlib.shape_predictor(os.path.join(os.path.join(_base_dir, "data"), "shape_predictor_5_face_landmarks.dat"))
+_encoder = dlib.face_recognition_model_v1(os.path.join(os.path.join(_base_dir, "data"), "dlib_face_recognition_resnet_model_v1.dat"))
 
 
 def detect_faces(img):
