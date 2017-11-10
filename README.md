@@ -2,7 +2,7 @@
 
 ### Orcas
 
-<img align="center" src="https://github.com/ahmdrz/orcas/blob/master/resources/orca.png" alt="orca clip art">
+<img align="center" src="https://github.com/ahmdrz/orcas/blob/master/resources/orcinus_orca-robert_pitman.jpg" alt="orca clip art">
 
 **Classify the images in your photo album into suitable destinations.**
 
