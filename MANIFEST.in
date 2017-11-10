@@ -1,1 +1,1 @@
-include orcas/data
+include orcas/data/*

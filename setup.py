@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="orcas",
-    version="0.0.1",
+    version="1.1.2",
     description="Classify the images in your photo album into suitable destinations.",
     url="http://github.com/ahmdrz/orcas",
     author="Ahmadreza Zibaei",
@@ -19,10 +19,6 @@ setup(
         'scipy',
         'numpy'
     ],
-    package_dir={'orcas': 'orcas'},
-    package_data={
-        'orcas': ['data/*.dat']
-    },
     include_package_data=True,
     zip_safe=False
 )
