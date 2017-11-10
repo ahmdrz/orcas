@@ -66,7 +66,7 @@ def process_files(files):
         logger.info("Details , {} faces , labels {}".format(len(detected_faces), labels))
 
 
-if __name__ == "__main__":
+def main():
     process_files(scan_images(args["input"]))
     if not os.path.exists(args["output"]):
         os.mkdir(args["output"])
@@ -86,3 +86,7 @@ if __name__ == "__main__":
                 number = face_counter[face.id]
             copyfile(face.path, os.path.join(target_path, "{}.jpg".format(number)))
             face_counter[face.id] = number + 1
+
+
+if __name__ == "__main__":
+    main()

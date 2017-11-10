@@ -101,3 +101,10 @@ ENV/
 .mypy_cache/
 
 test/
+.idea/
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
